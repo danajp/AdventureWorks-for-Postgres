@@ -1,3 +1,22 @@
+# TL;DR Dana's Modifications
+
+1. Have a postgres instance running. For example:
+
+        docker run -it -e POSTGRES_PASSWORD=postgres postgres:9.6
+
+1. Create the schema and load the data
+
+        make
+
+1. Connect to the database
+
+        make connect
+
+1. destroy everything
+
+        make clean
+
+
 # AdventureWorks for Postgres
 
 This project provides the scripts necessary to set up the OLTP part of the go-to database used in
@@ -68,7 +87,7 @@ this to help people learn a new environment.
 
 As well, with the imminent release of SQL Server 2017 for Linux, this sample could be used to
 evaluate performance differences between Postgres and SQL 2017.  Never thought I'd see the day that
-MS SQL got compiled for Linux, but alas, here we are. 
+MS SQL got compiled for Linux, but alas, here we are.
 
 Let's keep coding fun.
 
